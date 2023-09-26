@@ -68,9 +68,8 @@ DEFAULT CHARACTER SET = utf8mb3;
 CREATE TABLE IF NOT EXISTS `mydb`.`persona` (
   `id_cedula` DOUBLE NOT NULL,
   `nombre` VARCHAR(255) NULL DEFAULT NULL,
-  `edad` INT NULL DEFAULT NULL,
-  `telefono` INT NULL DEFAULT NULL,
-  `sexo` VARCHAR(45) NULL DEFAULT NULL,
+  `telefono` DOUBLE NULL DEFAULT NULL,
+  `sexo` ENUM('Femenino', 'Masculino') NULL DEFAULT NULL,
   `fecha_de_nacimiento` TIMESTAMP NULL DEFAULT NULL,
   PRIMARY KEY (`id_cedula`))
 ENGINE = InnoDB
@@ -81,10 +80,15 @@ DEFAULT CHARACTER SET = utf8mb3;
 -- Table `mydb`.`dependiente`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `mydb`.`dependiente` (
+  `persona_id_cedula_cabeza` DOUBLE NOT NULL,
   `persona_id_cedula` DOUBLE NOT NULL,
-  INDEX `fk_dependiente_persona1_idx` (`persona_id_cedula` ASC) VISIBLE,
-  CONSTRAINT `fk_dependiente_persona1`
+  INDEX `fk_dependiente_persona1_idx` (`persona_id_cedula_cabeza` ASC) VISIBLE,
+  INDEX `fk_cabeza_de_familia_persona1_idx` (`persona_id_cedula` ASC) VISIBLE,
+  CONSTRAINT `fk_cabeza_de_familia_persona1`
     FOREIGN KEY (`persona_id_cedula`)
+    REFERENCES `mydb`.`persona` (`id_cedula`),
+  CONSTRAINT `fk_dependiente_persona1`
+    FOREIGN KEY (`persona_id_cedula_cabeza`)
     REFERENCES `mydb`.`persona` (`id_cedula`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb3;

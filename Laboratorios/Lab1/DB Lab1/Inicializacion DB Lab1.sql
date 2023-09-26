@@ -237,34 +237,34 @@ INSERT INTO capital (departamento_id_departamento, municipio_id_municipio) VALUE
     (99, 99001);  -- Vichada - Puerto Carreño
   
   -- Agregar personas a la tabla "persona"
-INSERT INTO persona (id_cedula, nombre, edad, telefono, sexo, fecha_de_nacimiento) VALUES
-    (1234567890, 'Juan Pérez', 30, 123456789, 'Masculino', '1993-05-15'),
-    (2345678901, 'María Rodríguez', 28, 234567890, 'Femenino', '1995-09-20'),
-    (3456789012, 'Carlos López', 35, 345678901, 'Masculino', '1988-03-10'),
-    (4567890123, 'Ana García', 27, 456789012, 'Femenino', '1996-11-05'),
-    (5678901234, 'Luis Martínez', 32, 567890123, 'Masculino', '1990-07-25'),
-    (6789012345, 'Laura Torres', 29, 678901234, 'Femenino', '1993-02-12'),
-    (7890123456, 'Pedro González', 31, 789012345, 'Masculino', '1991-12-08'),
-    (8901234567, 'Isabel Silva', 26, 890123456, 'Femenino', '1997-08-18'),
-    (9012345678, 'Sergio Pérez', 34, 901234567, 'Masculino', '1989-04-30'),
-    (1122334455, 'Marta López', 30, 112233445, 'Femenino', '1992-06-22'),
-    (2233445566, 'Javier García', 33, 223344556, 'Masculino', '1989-10-14'),
-    (3344556677, 'Carolina Martínez', 29, 334455667, 'Femenino', '1994-03-05'),
-    (4455667788, 'Ricardo Torres', 37, 445566778, 'Masculino', '1985-09-28'),
-    (5566778899, 'Luisa González', 28, 556677889, 'Femenino', '1994-07-09'),
-    (6677889900, 'Andrés Silva', 32, 667788990, 'Masculino', '1989-12-01'),
-    (7788990011, 'Valeria Pérez', 27, 778899001, 'Femenino', '1995-04-16'),
-    (8899001122, 'Diego López', 35, 889900112, 'Masculino', '1988-02-04'),
-    (9900112233, 'Natalia García', 29, 990011223, 'Femenino', '1993-10-11'),
-    (1100223344, 'Gabriel Martínez', 33, 110022334, 'Masculino', '1989-07-28'),
-    (2211334455, 'Carmen Torres', 28, 221133445, 'Femenino', '1994-01-19'),
-    (3322445566, 'Roberto González', 34, 332244556, 'Masculino', '1990-06-07'),
-    (4433225566, 'Elena Fernández', 26, 443322556, 'Femenino', '1997-03-14'),
-    (5544336677, 'Miguel López', 40, 554433667, 'Masculino', '1982-09-02'),
-    (6655447788, 'Sofía Rodríguez', 22, 665544778, 'Femenino', '1999-12-25'),
-    (7766558899, 'Andrea Martínez', 39, 776655889, 'Femenino', '1983-04-07'),
-    (8877660011, 'Jorge Pérez', 45, 887766001, 'Masculino', '1977-11-30'),
-    (9988771122, 'Lucía González', 24, 998877112, 'Femenino', '1998-08-09');
+INSERT INTO persona (id_cedula, nombre, telefono, sexo, fecha_de_nacimiento) VALUES
+    (1234567890, 'Juan Pérez', 123456789, 'Masculino', '1993-05-15'),
+    (2345678901, 'María Rodríguez', 234567890, 'Femenino', '1995-09-20'),
+    (3456789012, 'Carlos López', 345678901, 'Masculino', '1988-03-10'),
+    (4567890123, 'Ana García',  456789012, 'Femenino', '1996-11-05'),
+    (5678901234, 'Luis Martínez', 567890123, 'Masculino', '1990-07-25'),
+    (6789012345, 'Laura Torres', 678901234, 'Femenino', '1993-02-12'),
+    (7890123456, 'Pedro González', 789012345, 'Masculino', '1991-12-08'),
+    (8901234567, 'Isabel Silva', 890123456, 'Femenino', '1997-08-18'),
+    (9012345678, 'Sergio Pérez', 901234567, 'Masculino', '1989-04-30'),
+    (1122334455, 'Marta López', 112233445, 'Femenino', '1992-06-22'),
+    (2233445566, 'Javier García', 223344556, 'Masculino', '1989-10-14'),
+    (3344556677, 'Carolina Martínez', 334455667, 'Femenino', '1994-03-05'),
+    (4455667788, 'Ricardo Torres', 445566778, 'Masculino', '1985-09-28'),
+    (5566778899, 'Luisa González', 556677889, 'Femenino', '1994-07-09'),
+    (6677889900, 'Andrés Silva', 667788990, 'Masculino', '1989-12-01'),
+    (7788990011, 'Valeria Pérez', 778899001, 'Femenino', '1995-04-16'),
+    (8899001122, 'Diego López', 889900112, 'Masculino', '1988-02-04'),
+    (9900112233, 'Natalia García', 990011223, 'Femenino', '1993-10-11'),
+    (1100223344, 'Gabriel Martínez', 110022334, 'Masculino', '1989-07-28'),
+    (2211334455, 'Carmen Torres', 221133445, 'Femenino', '1994-01-19'),
+    (3322445566, 'Roberto González', 332244556, 'Masculino', '1990-06-07'),
+    (4433225566, 'Elena Fernández', 443322556, 'Femenino', '1997-03-14'),
+    (5544336677, 'Miguel López', 554433667, 'Masculino', '1982-09-02'),
+    (6655447788, 'Sofía Rodríguez', 665544778, 'Femenino', '1999-12-25'),
+    (7766558899, 'Andrea Martínez', 776655889, 'Femenino', '1983-04-07'),
+    (8877660011, 'Jorge Pérez', 887766001, 'Masculino', '1977-11-30'),
+    (9988771122, 'Lucía González', 998877112, 'Femenino', '1998-08-09');
 
 	-- Agregar viviendas a la tabla "vivienda"
 INSERT INTO vivienda (id_vivienda, direccion, capacidad, niveles, baños, estrato, area, municipio_id_municipio) VALUES
@@ -399,18 +399,17 @@ INSERT INTO vivienda_en_venta (id_venta, precio, estado, fechaPublicacion, perso
 
 
     -- relaciona que personas son las cabeza de familia
-INSERT INTO dependiente (persona_id_cedula) VALUES
-    (1234567890),  
-    (3456789012),  
-    (5678901234),   
-    (7890123456), 
-    (9012345678),  
-    (2233445566),  
-    (4455667788), 
-    (6677889900),  
-    (8899001122),  
-    (1100223344), 
-    (3322445566), 
-    (5544336677), 
-    (8877660011); 
-    
+INSERT INTO dependiente (persona_id_cedula_cabeza, persona_id_cedula) VALUES
+    (1234567890, 2345678901),  
+    (3456789012, 4567890123),  
+    (5678901234, 6789012345),   
+    (7890123456, 8901234567), 
+    (9012345678, 1122334455),  
+    (2233445566, 3344556677),  
+    (4455667788, 5566778899), 
+    (6677889900, 7788990011),  
+    (8899001122, 9900112233),  
+    (1100223344, 2211334455), 
+    (3322445566, 4433225566), 
+    (5544336677, 6655447788), 
+    (7766558899, 8877660011); 
